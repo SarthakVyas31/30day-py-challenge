@@ -34,7 +34,7 @@ class BookOut(Book):
 
 @app.get("/")
 def read():
-    return {"message": "Welcome to the Book Library API"}
+    return {"message": "Welcome to the Book Library"}
 
 @app.get("/books", response_model=List[BookOut])
 def get_books():
